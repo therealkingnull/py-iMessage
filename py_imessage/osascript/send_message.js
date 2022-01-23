@@ -37,7 +37,7 @@ function sendNewMessage(number, message) {
 
 function getHandleForNumber(number) {
     // Return handle id associated with number
-    return messagesApp.buddies.whose({handle:{_contains: number}})[0].id()
+    return messagesApp.participants.whose({handle:{_contains: number}})[0].id()
 }
 
 
